@@ -28,7 +28,7 @@
           </section>
           <section class="header__tel">
             <div class="tel__number"><i></i>8 800 <b>555 55 22</b></div>
-            <a href="#">Перезвонить мне</a>
+            <a data-scroll href="#order">Перезвонить мне</a>
             <div class="tel__note">*Бесплатная экспресс доставка
 по Украине!</div>
           </section>
@@ -59,7 +59,7 @@
               <div class="stock-text__title">Бесплатная консультация</div>
               <div class="stock-text__content">+14 дней <br> тест-драйва</div>
             </div>
-            <a class="slider__stock-btn" href="#">попробовать!</a>
+            <a class="slider__stock-btn" data-scroll href="#order">попробовать!</a>
             <div class="slider__stock-stamps">
               <img src="img/stock-stamp-1.png">
               <img src="img/stock-stamp-2.png">
@@ -68,7 +68,7 @@
           </div>
         </div>
       </article>
-      <article class="nav">
+      <article class="nav  default" id="menu">
         <div class="positioner">
           <div class="nav__logo"><img src="img/nav-logo.png" alt="Логотип"></div>
           <ul>
@@ -81,8 +81,8 @@
             <li><a data-scroll href="#order">Заказать сейчас</a></li>
           </ul>
         </div>
-      </article>
       <div class="dividing-line"></div>
+      </article>
       <article class="video">
         <div class="positioner">
           <div class="video__title">посмотрите как держит телефон <span>polygon magnetic</span></div>
@@ -93,7 +93,7 @@
           </ul>
         </div>
       </article>
-      <article class="advantages">
+      <article class="advantages" id="advantages">
         <div class="positioner">
           <div class="advantages__title"><b>ПРЕВОСХОДСТВО POLYGON Magnetic</b> ПЕРЕД
 ДРУГИМИ ДЕРЖАТЕЛЯМИ</div>
@@ -146,7 +146,7 @@
               <div class="charger-title"><span>АКЦИЯ! </span>Зарядное USB-устройство стоимостью 690 рублей в ПОДАРОК</div>
               <div class="charger-text">При покупке автодержателя мы положим вам в коробку с заказом  Автомобильное зарядное USB-устройство в ПОДАРОК!</div>
             </div>
-            <a href="#" class="charger-btn">Заказать сейчас</a>
+            <a class="charger-btn" data-scroll href="#order">Заказать сейчас</a>
           </div>
         </div>
       </article>
@@ -239,8 +239,15 @@
           <div class="questions__title">ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ</div>
           <div class="questions__left">
             <ul>
-              <li><span>ВОПРОС: </span> Подойдет ли этот держатель к моему телефону? </li>
-              <li><span>ВОПРОС: </span> Этот держатель может повредить воздухозаборнику? </li>
+              <li class="question"><span>ВОПРОС: </span> Подойдет ли этот держатель к моему телефону? 
+                <div class="answer"><span>ОТВЕТ: </span> Да.</div>
+              </li>
+              <li class="question">
+                <span>ВОПРОС: </span> Этот держатель может повредить воздухозаборнику? 
+                <div class="answer">
+                  <span>ОТВЕТ: </span> Нет.
+                </div>
+              </li>
               <li><span>ВОПРОС: </span> Будет ли держатель работать именно с моей вентиляционной системой?  </li>
               <li><span>ВОПРОС: </span> Могу ли я сделать оптовую закупку вашего автодержателя и продавать его? </li>
               <li><span>ВОПРОС: </span> Возможно ли отправить мне продукт за границу например в европу? </li>
@@ -333,7 +340,7 @@
                 <div class="method__number">3</div>
                 <div class="method__content">Самовывоз г. Киев,
 Воссоединения 15, оф. 515 
-<b>8 800 555 55 2</b> 
+<b>8 800 555 55 22</b> 
 Пн-Пт с <span>10:00 — 18:00</span> 
 Сб. с <span>10:00 — 17:00</span></div>
                 <div class="method__line"></div>
@@ -375,12 +382,79 @@ Visa/MasterCard</div>
 и получите <b>скидку 40%</b></div>
               <div class="order-form__name">
                 <label for="order-form__name">Имя:</label>
-                <div class="order-form__input-wrapper"><input id="order-form__name" type="text"></div>
+                <i></i>
+                <input id="order-form__name" type="text">
               </div>
-              
-              
-              
+              <div class="order-form__tel">
+                <label for="order-form__tel">Телефон:</label>
+                <i></i>
+                <input id="order-form__tel" type="text">
+              </div>
+              <div class="order-form__color">
+                <label for="order-form__color">Цвет держателя:</label>
+                <i></i>
+                <select id="order-form__color" type="text">
+                  <option>серый</option>
+                  <option>зелёный</option>
+                </select>
+              </div>
+              <input type="submit" value="заказать сейчас">
             </form>
+          </section>
+        </div>
+      </article>
+      <article class="footer">
+        <div class="positioner">
+          <section class="contacts">
+            <div class="contacts__title">контакты</div>
+            <div class="contacts__content">
+              <div class="contacts__text">Заказы, доставка, оплата, вопросы: </div>
+              <a class="contacts__email" href="#">info@polygon.com</a>
+              <div class="contacts__text">Создание магазинов,  технологии печати:  </div>
+              <a class="contacts__email" href="#">shopmaster@polygon.com </a>
+              <div class="contacts__text">Финансовые вопросы: </div>
+              <a class="contacts__email" href="#">finance@polygon.com</a>
+            </div>
+          </section>
+          <section class="footer-menu">
+            <div class="footer-menu__title">Меню</div>
+            <ul class="footer-menu__content">
+              <li><a href="#">Первый экран</a></li>
+              <li><a data-scroll href="#details">Как это работает</a></li>
+              <li><a href="#">Почему POLYGON</a></li>
+              <li><a data-scroll href="#color">Цвета</a></li>
+              <li><a data-scroll href="#advantages">Преимущества</a></li>
+              <li><a data-scroll href="#order">Форма заказа</a></li>
+            </ul>
+          </section>
+          <section class="footer-payment">
+            <div class="footer-payment__title">Способы оплаты</div>
+            <table class="footer-payment__content">
+              <tr>
+                <td><img src="img/footer-payment-1.png"></td>
+                <td><img src="img/footer-payment-2.png"></td>
+                <td><img src="img/footer-payment-3.png"></td>
+              </tr>
+              <tr>
+                <td><img src="img/footer-payment-4.png"></td>
+                <td><img src="img/footer-payment-5.png"></td>
+                <td><img src="img/footer-payment-6.png"></td>
+              </tr>
+            </table>
+          </section>
+          <section class="footer__others">
+            <div class="footer__tel"><i></i>8 800 <b>555 55 22</b></div>
+            <div class="footer__address"><i></i>Киев, ул. Гмыри 3, оф. 175</div>
+            <div class="footer__schedule"><i></i>Пн-Пт с 10:00 — 18:00 <br>
+Сб. с 10:00 — 17:00</div>
+            <ul class="footer__social">
+              <li><a class="social__vk" href="#"></a></li>
+              <li><a class="social__tw" href="#"></a></li>
+              <li><a class="social__fb" href="#"></a></li>
+              <li><a class="social__mob" href="#"></a></li>
+              <li><a class="social__skype" href="#"></a></li>
+              <li><a class="social__inst" href="#"></a></li>
+            </ul>
           </section>
         </div>
       </article>
